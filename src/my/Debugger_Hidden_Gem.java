@@ -42,6 +42,7 @@ import java.util.stream.Stream;
  * Egor Ushakov<br>
  * 25 Feb 2021
  * </div>
+ * @see <a href="https://youtu.be/GRmOXuoe648?t=3699">Youtube: Debugger: Hidden Gem</a>
  */
 public class Debugger_Hidden_Gem {
 
@@ -74,6 +75,7 @@ public class Debugger_Hidden_Gem {
      * <li>And much more</li>
      * </ul>
      * </div>
+     * @see <a href="https://youtu.be/GRmOXuoe648?t=3739">Youtube: Why debug?</a>
      */
     int alwaysDebug;
 
@@ -106,6 +108,7 @@ public class Debugger_Hidden_Gem {
      * <li>&#128142 Step into lambdas</li>
      * <li>&#128577 Lambda class/method name is not specified</li>
      * </ul>
+     * @see <a href="https://youtu.be/GRmOXuoe648?t=3882">Youtube: Lambdas (since 2014)</a>
      */
     public static class Lambdas {
         public static void main(String[] args) {
@@ -133,6 +136,7 @@ public class Debugger_Hidden_Gem {
      * <br><ul>
      * <li>also kotlin sequences</li>
      * </ul>
+     * @see <a href="https://youtu.be/GRmOXuoe648?t=4122">Youtube: Stream debugger</a>
      */
     public static class StreamDebugger {
         public static void main(String[] args) {
@@ -183,6 +187,7 @@ public class Debugger_Hidden_Gem {
      * <li>&#128515 Wildcard (any method in the project, class, in main, all methods)</li>
      * </ul>
      * </div>
+     * @see <a href="https://youtu.be/GRmOXuoe648?t=4263">Youtube: Method breakpoints</a>
      */
     public static class MethodBpt {
         public static void main(String[] args) {
@@ -219,6 +224,7 @@ public class Debugger_Hidden_Gem {
      * <li>&#128142 intentions</li>
      * <li>&#128142 Caller filter</li>
      * </ul>
+     * @see <a href="https://youtu.be/GRmOXuoe648?t=4552">Youtube: Breakpoint filters</a>
      */
     public static class Filters {
         public static void main(String[] args) {
@@ -269,6 +275,7 @@ public class Debugger_Hidden_Gem {
      * <li>Quick evaluate</li>
      * <li>&#128525 Alt+click</li>
      * </ul>
+     * @see <a href="https://youtu.be/GRmOXuoe648?t=4728">Youtube: Values</a>
      */
     static class Values {
         public static void main(String[] args) {
@@ -304,6 +311,7 @@ public class Debugger_Hidden_Gem {
      * <li>Check how to use an api</li>
      * <li>&#128142 code fragment</li>
      * </ul>
+     * @see <a href="https://youtu.be/GRmOXuoe648?t=4943">Youtube: Evaluate dialog</a>
      */
     static class Evaluate {
         public static void main(String[] args) {
@@ -334,6 +342,7 @@ public class Debugger_Hidden_Gem {
      * <li>&#128142 Shift-click</li>
      * <li>&#128142 Change behavior</li>
      * </ul>
+     * @see <a href="https://youtu.be/GRmOXuoe648?t=5152">Youtube: Non-suspending breakpoints?</a>
      */
     public static class Cache {
         static Cache instance;
@@ -374,6 +383,7 @@ public class Debugger_Hidden_Gem {
      * <li>&#128142 Force return</li>
      * <li>&#128142 Throw exception</li>
      * </ul>
+     * @see <a href="https://youtu.be/GRmOXuoe648?t=5532">Youtube: Advanced stepping</a>
      */
     public static class Stepping {
         public static void main(String[] args) throws IOException {
@@ -429,6 +439,7 @@ public class Debugger_Hidden_Gem {
      * <li>To highlight in different contexts</li>
      * <li>&#128142 To access anywhere with m_DebugLabel</li>
      * </ul>
+     * @see <a href="https://youtu.be/GRmOXuoe648?t=5721">Youtube: Mark object</a>
      */
     public static class Mark {
         public static void main(String[] args) {
@@ -468,6 +479,7 @@ public class Debugger_Hidden_Gem {
      * <li>Show referring objects</li>
      * <li>You can use mark object</li>
      * </ul>
+     * @see <a href="https://youtu.be/GRmOXuoe648?t=5871">Youtube: Memory view</a>
      */
     public static class Memory {
         public static void main(String[] args) {
@@ -504,6 +516,7 @@ public class Debugger_Hidden_Gem {
      * <li>&#128142 Class level watches</li>
      * <li>&#128142 Inline watches</li>
      * </ul>
+     * @see <a href="https://youtu.be/GRmOXuoe648?t=6064">Youtube: Watches</a>
      */
     public static class Watches {
         long millis = System.currentTimeMillis();
@@ -538,6 +551,7 @@ public class Debugger_Hidden_Gem {
      * <li>Shows the flow of the async execution</li>
      * <li>Presets for standard executors</li>
      * </ul>
+     * @see <a href="https://youtu.be/GRmOXuoe648?t=6276">Youtube: Async stack traces</a>
      */
     public static class Async {
         public static void main(String[] args) throws InterruptedException {
@@ -567,6 +581,7 @@ public class Debugger_Hidden_Gem {
      * <br><ul>
      * <li>Custom setup with annotations</li>
      * </ul>
+     * @see <a href="https://youtu.be/GRmOXuoe648?t=6411">Youtube: Async stack traces</a>
      */
     public static class AsyncSchedulerExample {
         private static final BlockingQueue<Integer> queue = new LinkedBlockingQueue<>();
@@ -614,6 +629,7 @@ public class Debugger_Hidden_Gem {
      * <li>Custom children</li>
      * <li>Share with annotations</li>
      * </ul>
+     * @see <a href="https://youtu.be/GRmOXuoe648?t=6607">Youtube: Renderers</a>
      */
     @Debug.Renderer(text = "\"size = \" + toArray().length", childrenArray = "toArray()")
     public static class FastLinkedList<T> {
@@ -664,6 +680,7 @@ public class Debugger_Hidden_Gem {
      * <ul><br>
      * <li>&#128142 Debug more</li>
      * </ul>
+     * @see <a href="https://youtu.be/GRmOXuoe648?t=6815">Youtube: Thank you</a>
      */
 
     int questions;
